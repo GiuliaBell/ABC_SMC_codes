@@ -305,5 +305,5 @@ for iterat in range(num_iters):
    Epsilons.append(run[1])
 
 # Save the results as a text file.
-np.savetxt('Posterior_OTI_exponential.txt', ABC_runs)
+np.savetxt('Posterior_OTI_exponential.txt', ABC_runs[num_iters])
 

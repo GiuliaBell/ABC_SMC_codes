@@ -173,8 +173,8 @@ def other_iterations(nn,it):
         ranges.append(r1)
     ranges_arr = np.asarray(ranges)
     sigma = 0.1*ranges_arr
-    sigma[n_pars-2] = np.int(np.ceil(sigma[n_pars-2]))
-    sigma[n_pars-1] = np.int(np.ceil(sigma[n_pars-1]))
+    sigma[n_pars-2] = int(np.ceil(sigma[n_pars-2]))
+    sigma[n_pars-1] = int(np.ceil(sigma[n_pars-1]))
 
     # Define epsilon as median of the accepted distance values from previous iteration.
     epsilon = np.median(ABC_runs[it][:,0])
@@ -327,5 +327,5 @@ for iterat in range(num_iters):
    Epsilons.append(run[1])
 
 # Save the results as a text file.
-np.savetxt('Posterior_OTI_multi_stage.txt', ABC_runs)
+np.savetxt('Posterior_OTI_multi_stage.txt', ABC_runs[num_iters])
 

@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/467183547.svg)](https://zenodo.org/badge/latestdoi/467183547)
 # ABC-SMC algorithm to parametrise the multi-stage and the exponential models using CFSE data
 
 This repository contains the python codes to carry out the ABC-SMC parameter inference presented as case study in the paper “Multi-stage models of cell proliferation and death: tracking cell divisions with Erlang distributions”. The data files required for the inference are included for both clonotypes.
